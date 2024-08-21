@@ -1,0 +1,431 @@
+{
+    "widgets": [
+        {
+            "height": 6,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))", "label": "SGW-001-sdb-IOPS", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))", "label": "SGW-001-sdc-IOPS", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))", "label": "SGW-001-sdd-IOPS", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))", "label": "SGW-001-sde-IOPS", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadOps", "VolumeId", "vol-0e09cbc19bd12", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-0a5bda7e964fa", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-01b42e36e2b46", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-0068d3a465950", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-001-IOPS",
+                "yAxis": {
+                    "left": {
+                        "label": "IOPS",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 0,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))", "label": "SGW-002-sdb-IOPS", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))", "label": "SGW-002-sdc-IOPS", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))", "label": "SGW-002-sdd-IOPS", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))", "label": "SGW-002-sde-IOPS", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadOps", "VolumeId", "vol-01b86120bbd17", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-0075d35760561", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-0227fec3aa749", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-07fd8b9f152f9", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-002-IOPS",
+                "yAxis": {
+                    "left": {
+                        "label": "IOPS",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 0,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))", "label": "SGW-003-sdb-IOPS", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))", "label": "SGW-003-sdc-IOPS", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))", "label": "SGW-003-sdd-IOPS", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))", "label": "SGW-003-sde-IOPS", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadOps", "VolumeId", "vol-000d0e13c0480", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-09e59de626b73", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-0836537f5ecd0", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-09c3b65bb3bb2", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-003-IOPS",
+                "yAxis": {
+                    "left": {
+                        "label": "IOPS",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 0,
+            "x": 18,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))", "label": "SGW-004-sdb-IOPS", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))", "label": "SGW-004-sdc-IOPS", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))", "label": "SGW-004-sdd-IOPS", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))", "label": "SGW-004-sde-IOPS", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadOps", "VolumeId", "vol-0e5e03a3c2e79", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-07d47c9e9c70b", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-027de2a8faa4c", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadOps", ".", "vol-016d13cf48644", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteOps", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-004-IOPS",
+                "yAxis": {
+                    "left": {
+                        "label": "IOPS",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 6,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))/1024/1024", "label": "SGW-001-sdb-MB/s", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))/1024/1024", "label": "SGW-001-sdc-MB/s", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))/1024/1024", "label": "SGW-001-sdd-MB/s", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))/1024/1024", "label": "SGW-001-sde-MB/s", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadBytes", "VolumeId", "vol-0e09cbc19bd12", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-0a5bda7e964fa", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-01b42e36e2b46", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-0068d3a465950", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-001-MB/s",
+                "yAxis": {
+                    "left": {
+                        "label": "MB/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 6,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))/1024/1024", "label": "SGW-002-sdb-MB/s", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))/1024/1024", "label": "SGW-002-sdc-MB/s", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))/1024/1024", "label": "SGW-002-sdd-MB/s", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))/1024/1024", "label": "SGW-002-sde-MB/s", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadBytes", "VolumeId", "vol-01b86120bbd17", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-0075d35760561", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-0227fec3aa749", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-07fd8b9f152f9", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-002-MB/s",
+                "yAxis": {
+                    "left": {
+                        "label": "MB/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 6,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))/1024/1024", "label": "SGW-003-sdb-MB/s", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))/1024/1024", "label": "SGW-003-sdc-MB/s", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))/1024/1024", "label": "SGW-003-sdd-MB/s", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))/1024/1024", "label": "SGW-003-sde-MB/s", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadBytes", "VolumeId", "vol-000d0e13c0480", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-09e59de626b73", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-0836537f5ecd0", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-09c3b65bb3bb2", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-003-MB/s",
+                "yAxis": {
+                    "left": {
+                        "label": "MB/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 6,
+            "x": 18,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1))/1024/1024", "label": "SGW-004-sdb-MB/s", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m4+m5)/(PERIOD(m4))/1024/1024", "label": "SGW-004-sdc-MB/s", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7))/1024/1024", "label": "SGW-004-sdd-MB/s", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m10+m11)/(PERIOD(m10))/1024/1024", "label": "SGW-004-sde-MB/s", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EBS", "VolumeReadBytes", "VolumeId", "vol-0e5e03a3c2e79", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-07d47c9e9c70b", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-027de2a8faa4c", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m9", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeReadBytes", ".", "vol-016d13cf48644", { "id": "m10", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeWriteBytes", ".", ".", { "id": "m11", "region": "us-east-1", "visible": false } ],
+                    [ ".", "VolumeIdleTime", ".", ".", { "id": "m12", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-004-MB/s",
+                "yAxis": {
+                    "left": {
+                        "label": "MB/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 12,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "m1 / 300 / 1024", "label": "SGW-001-CloudBytesDownloaded", "id": "e1", "region": "us-east-1", "visible": false } ],
+                    [ { "expression": "m2 / 300 / 1024 / 1024", "label": "SGW-001-MBps", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "m3 / 300 / 1024", "label": "SGW-002-CloudBytesDownloaded", "id": "e3", "region": "us-east-1", "visible": false } ],
+                    [ { "expression": "m4 / 300 / 1024 / 1024", "label": "SGW-002-MBps", "id": "e4", "region": "us-east-1" } ],
+                    [ { "expression": "m5 / 300 / 1024", "label": "SGW-003-CloudBytesDownloaded", "id": "e5", "region": "us-east-1", "visible": false } ],
+                    [ { "expression": "m6 / 300 / 1024 / 1024", "label": "SGW-003-MBps", "id": "e6", "region": "us-east-1" } ],
+                    [ { "expression": "m7 / 300 / 1024", "label": "SGW-004-CloudBytesDownloaded", "id": "e7", "region": "us-east-1", "visible": false } ],
+                    [ { "expression": "m8 / 300 / 1024 / 1024", "label": "SGW-004-MBps", "id": "e8", "region": "us-east-1" } ],
+                    [ "AWS/StorageGateway", "CloudBytesDownloaded", "GatewayName", "sgw-600gb-io-001", "GatewayId", "sgw-59A6", { "id": "m1", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesUploaded", ".", ".", ".", ".", { "id": "m2", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesDownloaded", ".", "sgw-600gb-io-002", ".", "sgw-5BA6", { "id": "m3", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesUploaded", ".", ".", ".", ".", { "id": "m4", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesDownloaded", ".", "sgw-600gb-io-003", ".", "sgw-28A6", { "id": "m5", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesUploaded", ".", ".", ".", ".", { "id": "m6", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesDownloaded", ".", "sgw-600gb-io-004", ".", "sgw-2FA6", { "id": "m7", "region": "us-east-1", "visible": false } ],
+                    [ ".", "CloudBytesUploaded", ".", ".", ".", ".", { "id": "m8", "region": "us-east-1", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "stat": "Sum",
+                "period": 60,
+                "title": "SGW-IO-s3-upload-MB/s",
+                "yAxis": {
+                    "left": {
+                        "label": "MB/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 12,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/StorageGateway", "CachePercentDirty", "GatewayName", "sgw-600gb-io-001", "GatewayId", "sgw-59A6", { "region": "us-east-1", "label": "SGW-IO-001" } ],
+                    [ "...", "sgw-600gb-io-002", ".", "sgw-51A6", { "region": "us-east-1", "label": "SGW-IO-002" } ],
+                    [ "...", "sgw-600gb-io-003", ".", "sgw-28A6", { "region": "us-east-1", "label": "SGW-IO-003" } ],
+                    [ "...", "sgw-600gb-io-004", ".", "sgw-2FA6", { "region": "us-east-1", "label": "SGW-IO-004" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 60,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 12,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/EC2", "CPUUtilization", "InstanceId", "i-025d2888c59ae", { "region": "us-east-1", "label": "ec2-SGW-IO-001" } ],
+                    [ "...", "i-0782cb222a8cb", { "region": "us-east-1", "label": "ec2-SGW-IO-002" } ],
+                    [ "...", "i-0bb88a5e015c1", { "region": "us-east-1", "label": "ec2-SGW-IO-003" } ],
+                    [ "...", "i-05fd9370b5bfe", { "region": "us-east-1", "label": "ec2-SGW-IO-004" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "SGW-IO-CPU-utilized-%"
+            }
+        },
+        {
+            "height": 6,
+            "width": 6,
+            "y": 12,
+            "x": 18,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ { "expression": "(m1+m2)/(PERIOD(m1)) * 8", "label": "SGW-IO-001-network-Gb/s", "id": "e1", "region": "us-east-1" } ],
+                    [ { "expression": "(m3+m4)/(PERIOD(m3)) * 8", "label": "SGW-IO-002-network-Gb/s", "id": "e2", "region": "us-east-1" } ],
+                    [ { "expression": "(m5+m6)/(PERIOD(m5)) * 8", "label": "SGW-IO-003-network-Gb/s", "id": "e3", "region": "us-east-1" } ],
+                    [ { "expression": "(m7+m8)/(PERIOD(m7)) * 8", "label": "SGW-IO-004-network-Gb/s", "id": "e4", "region": "us-east-1" } ],
+                    [ "AWS/EC2", "NetworkOut", "InstanceId", "i-025d2888c59ae", { "region": "us-east-1", "id": "m1", "visible": false } ],
+                    [ ".", "NetworkIn", ".", ".", { "region": "us-east-1", "id": "m2", "visible": false } ],
+                    [ ".", "NetworkOut", ".", "i-0782cb222a8cb ", { "region": "us-east-1", "id": "m3", "visible": false } ],
+                    [ ".", "NetworkIn", ".", ".", { "region": "us-east-1", "id": "m4", "visible": false } ],
+                    [ ".", "NetworkOut", ".", "i-0bb88a5e015c1", { "region": "us-east-1", "id": "m5", "visible": false } ],
+                    [ ".", "NetworkIn", ".", ".", { "region": "us-east-1", "id": "m6", "visible": false } ],
+                    [ ".", "NetworkOut", ".", "i-05fd9370b5bfe", { "region": "us-east-1", "id": "m7", "visible": false } ],
+                    [ ".", "NetworkIn", ".", ".", { "region": "us-east-1", "id": "m8", "visible": false } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 60,
+                "stat": "Average",
+                "title": "SGW-network-Gb/s",
+                "yAxis": {
+                    "left": {
+                        "label": "Gb/s",
+                        "showUnits": false
+                    }
+                }
+            }
+        }
+    ]
+}
