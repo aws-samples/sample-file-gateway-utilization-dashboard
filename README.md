@@ -8,14 +8,14 @@ Make sure to find and replace below information in the clodWatchDashboard.json f
 - Cache Volume ID, Gateway Name, Gateway ID, Gateway EC2 instance ID
 
 ## Configure CloudWatch Dashboard
-Configure the CloudWatch dashboard to view the S3 File Gateway metrics in real-time with the following widgets:
-•	SGW-00x-IOPS: Shows IOPS consumed across the four cache disks in a single Storage Gateway.
-•	SGW-00x-MB/s: Shows throughput across the four cache disks in a single Storage Gateway.
-•	SGW-IO-S3-upload-MB/s: Displays Amazon S3 upload performance for the four Storage Gateways.
-•	CachePercentDirty: Displays cache dirty percentage for the four Storage Gateways.
-    o	Dirty Cache is data that has not persisted to Amazon.
-•	SGW-IO-CPU-utilized-%: Displays CPU usage for the four Storage Gateways.
-•	SGW-network-Gb/s: Displays network bandwidth consumed for the four Storage Gateways.
+- Configure the CloudWatch dashboard to view the S3 File Gateway metrics in real-time with the following widgets:
+- SGW-00x-IOPS: Shows IOPS consumed across the four cache disks in a single Storage Gateway.
+- SGW-00x-MB/s: Shows throughput across the four cache disks in a single Storage Gateway.
+- SGW-IO-S3-upload-MB/s: Displays Amazon S3 upload performance for the four Storage Gateways.
+- CachePercentDirty: Displays cache dirty percentage for the four Storage Gateways.
+    - Dirty Cache is data that has not persisted to Amazon.
+- SGW-IO-CPU-utilized-%: Displays CPU usage for the four Storage Gateways.
+- SGW-network-Gb/s: Displays network bandwidth consumed for the four Storage Gateways.
 
 ## Monitor and Tune
 After creating the Amazon CloudWatch Dashboard, start the backup to generate load and populate the graphs. This helps in tuning the Storage Gateway EC2 instance. A reasonable load/data is needed to view metrics on the dashboard. Here's how to begin the tuning process:
